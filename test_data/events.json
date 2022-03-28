@@ -1,0 +1,1530 @@
+[
+    {
+        "transaction_id": "16f7d134-2898-43de-ad7d-0e27f9a0b6ea",
+        "type": "SEARCH",
+        "term": "repellat"
+    },
+    {
+        "transaction_id": "16f7d134-2898-43de-ad7d-0e27f9a0b6ea",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00003"
+        ]
+    },
+    {
+        "transaction_id": "a6609855-f40c-43fe-91ba-29d8075b8f01",
+        "type": "SEARCH",
+        "term": "corrupti"
+    },
+    {
+        "transaction_id": "d18cc8c7-f8dc-4610-a782-9445e87a1bf0",
+        "type": "SEARCH",
+        "term": "laborum"
+    },
+    {
+        "transaction_id": "d18cc8c7-f8dc-4610-a782-9445e87a1bf0",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "d18cc8c7-f8dc-4610-a782-9445e87a1bf0",
+        "type": "REPORT_VIEW",
+        "id": "X00008"
+    },
+    {
+        "transaction_id": "d18cc8c7-f8dc-4610-a782-9445e87a1bf0",
+        "type": "REPORT_VIEW",
+        "id": "X00096"
+    },
+    {
+        "transaction_id": "d18cc8c7-f8dc-4610-a782-9445e87a1bf0",
+        "type": "REPORT_VIEW",
+        "id": "X00082"
+    },
+    {
+        "transaction_id": "59afeda0-8943-436c-8720-2214895f974c",
+        "type": "SEARCH",
+        "term": "in"
+    },
+    {
+        "transaction_id": "59afeda0-8943-436c-8720-2214895f974c",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "59afeda0-8943-436c-8720-2214895f974c",
+        "type": "REPORT_VIEW",
+        "id": "X00088"
+    },
+    {
+        "transaction_id": "84c46e37-bf61-4191-bb06-cb1fed482dcf",
+        "type": "SEARCH",
+        "term": "reiciendis"
+    },
+    {
+        "transaction_id": "84c46e37-bf61-4191-bb06-cb1fed482dcf",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00022"
+        ]
+    },
+    {
+        "transaction_id": "84c46e37-bf61-4191-bb06-cb1fed482dcf",
+        "type": "REPORT_VIEW",
+        "id": "X00022"
+    },
+    {
+        "transaction_id": "3535ffb6-53cf-41ac-afe8-8eafc1d49297",
+        "type": "SEARCH",
+        "term": "harum"
+    },
+    {
+        "transaction_id": "3535ffb6-53cf-41ac-afe8-8eafc1d49297",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00056"
+        ]
+    },
+    {
+        "transaction_id": "3535ffb6-53cf-41ac-afe8-8eafc1d49297",
+        "type": "REPORT_VIEW",
+        "id": "X00056"
+    },
+    {
+        "transaction_id": "3535ffb6-53cf-41ac-afe8-8eafc1d49297",
+        "type": "REPORT_VIEW",
+        "id": "X00056"
+    },
+    {
+        "transaction_id": "3535ffb6-53cf-41ac-afe8-8eafc1d49297",
+        "type": "REPORT_VIEW",
+        "id": "X00056"
+    },
+    {
+        "transaction_id": "4a4efe62-0d2b-44b3-809f-1b8eb9c3b1a0",
+        "type": "SEARCH",
+        "term": "recusandae"
+    },
+    {
+        "transaction_id": "4a4efe62-0d2b-44b3-809f-1b8eb9c3b1a0",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00082",
+            "X00028"
+        ]
+    },
+    {
+        "transaction_id": "4a4efe62-0d2b-44b3-809f-1b8eb9c3b1a0",
+        "type": "REPORT_VIEW",
+        "id": "X00028"
+    },
+    {
+        "transaction_id": "c2dd8860-4088-4f40-80ab-5b8bff888c79",
+        "type": "SEARCH",
+        "term": "voluptates"
+    },
+    {
+        "transaction_id": "c2dd8860-4088-4f40-80ab-5b8bff888c79",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00079",
+            "X00031",
+            "X00026",
+            "X00030"
+        ]
+    },
+    {
+        "transaction_id": "c2dd8860-4088-4f40-80ab-5b8bff888c79",
+        "type": "REPORT_VIEW",
+        "id": "X00031"
+    },
+    {
+        "transaction_id": "c2dd8860-4088-4f40-80ab-5b8bff888c79",
+        "type": "REPORT_VIEW",
+        "id": "X00026"
+    },
+    {
+        "transaction_id": "c2dd8860-4088-4f40-80ab-5b8bff888c79",
+        "type": "REPORT_VIEW",
+        "id": "X00079"
+    },
+    {
+        "transaction_id": "9d973ebf-82b8-4433-902b-220910ee6789",
+        "type": "SEARCH",
+        "term": "aspernatur"
+    },
+    {
+        "transaction_id": "9d973ebf-82b8-4433-902b-220910ee6789",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00051",
+            "X00094"
+        ]
+    },
+    {
+        "transaction_id": "9d973ebf-82b8-4433-902b-220910ee6789",
+        "type": "REPORT_VIEW",
+        "id": "X00070"
+    },
+    {
+        "transaction_id": "9d973ebf-82b8-4433-902b-220910ee6789",
+        "type": "REPORT_VIEW",
+        "id": "X00094"
+    },
+    {
+        "transaction_id": "9d973ebf-82b8-4433-902b-220910ee6789",
+        "type": "REPORT_VIEW",
+        "id": "X00051"
+    },
+    {
+        "transaction_id": "769ed026-e0e7-4124-923b-3ecc44cfa916",
+        "type": "SEARCH",
+        "term": "voluptatibus"
+    },
+    {
+        "transaction_id": "769ed026-e0e7-4124-923b-3ecc44cfa916",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "769ed026-e0e7-4124-923b-3ecc44cfa916",
+        "type": "REPORT_VIEW",
+        "id": "X00053"
+    },
+    {
+        "transaction_id": "769ed026-e0e7-4124-923b-3ecc44cfa916",
+        "type": "REPORT_VIEW",
+        "id": "X00091"
+    },
+    {
+        "transaction_id": "d7089660-9a6e-4009-9fe5-50df09af14f6",
+        "type": "SEARCH",
+        "term": "inventore"
+    },
+    {
+        "transaction_id": "d7089660-9a6e-4009-9fe5-50df09af14f6",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00065"
+        ]
+    },
+    {
+        "transaction_id": "4a3d746c-e1ce-4ca0-80d8-163616e582cb",
+        "type": "SEARCH",
+        "term": "eligendi"
+    },
+    {
+        "transaction_id": "3edb05d3-7d5d-4178-9371-e7f493031306",
+        "type": "SEARCH",
+        "term": "est"
+    },
+    {
+        "transaction_id": "3edb05d3-7d5d-4178-9371-e7f493031306",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00086"
+        ]
+    },
+    {
+        "transaction_id": "a4dffa68-551b-4b69-8ce8-c7c8cd894ec8",
+        "type": "SEARCH",
+        "term": "odit"
+    },
+    {
+        "transaction_id": "16ac0c65-07a4-4fa1-94b1-c4fca44c0440",
+        "type": "SEARCH",
+        "term": "impedit"
+    },
+    {
+        "transaction_id": "16ac0c65-07a4-4fa1-94b1-c4fca44c0440",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "16ac0c65-07a4-4fa1-94b1-c4fca44c0440",
+        "type": "REPORT_VIEW",
+        "id": "X00090"
+    },
+    {
+        "transaction_id": "16ac0c65-07a4-4fa1-94b1-c4fca44c0440",
+        "type": "REPORT_VIEW",
+        "id": "X00033"
+    },
+    {
+        "transaction_id": "ab4c3a58-6a93-49e9-a580-981aef156353",
+        "type": "SEARCH",
+        "term": "aspernatur"
+    },
+    {
+        "transaction_id": "ab4c3a58-6a93-49e9-a580-981aef156353",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00049"
+        ]
+    },
+    {
+        "transaction_id": "0bad029b-9716-4bbe-b66e-4ad829f48a12",
+        "type": "SEARCH",
+        "term": "exercitationem"
+    },
+    {
+        "transaction_id": "0bad029b-9716-4bbe-b66e-4ad829f48a12",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00038",
+            "X00027"
+        ]
+    },
+    {
+        "transaction_id": "0bad029b-9716-4bbe-b66e-4ad829f48a12",
+        "type": "REPORT_VIEW",
+        "id": "X00038"
+    },
+    {
+        "transaction_id": "0bad029b-9716-4bbe-b66e-4ad829f48a12",
+        "type": "REPORT_VIEW",
+        "id": "X00027"
+    },
+    {
+        "transaction_id": "0bad029b-9716-4bbe-b66e-4ad829f48a12",
+        "type": "REPORT_VIEW",
+        "id": "X00027"
+    },
+    {
+        "transaction_id": "53732b63-b03d-4ae6-b485-9f3852de63a4",
+        "type": "SEARCH",
+        "term": "ex"
+    },
+    {
+        "transaction_id": "53732b63-b03d-4ae6-b485-9f3852de63a4",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00095"
+        ]
+    },
+    {
+        "transaction_id": "53732b63-b03d-4ae6-b485-9f3852de63a4",
+        "type": "REPORT_VIEW",
+        "id": "X00095"
+    },
+    {
+        "transaction_id": "52cf0fb8-f7bb-4f20-9ff5-320d5eb5b089",
+        "type": "SEARCH",
+        "term": "excepturi"
+    },
+    {
+        "transaction_id": "52cf0fb8-f7bb-4f20-9ff5-320d5eb5b089",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00039",
+            "X00078"
+        ]
+    },
+    {
+        "transaction_id": "52cf0fb8-f7bb-4f20-9ff5-320d5eb5b089",
+        "type": "REPORT_VIEW",
+        "id": "X00039"
+    },
+    {
+        "transaction_id": "52cf0fb8-f7bb-4f20-9ff5-320d5eb5b089",
+        "type": "REPORT_VIEW",
+        "id": "X00043"
+    },
+    {
+        "transaction_id": "52cf0fb8-f7bb-4f20-9ff5-320d5eb5b089",
+        "type": "REPORT_VIEW",
+        "id": "X00002"
+    },
+    {
+        "transaction_id": "6018edd8-56da-4a67-95ef-3c5090756320",
+        "type": "SEARCH",
+        "term": "autem"
+    },
+    {
+        "transaction_id": "6018edd8-56da-4a67-95ef-3c5090756320",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00005",
+            "X00012",
+            "X00058"
+        ]
+    },
+    {
+        "transaction_id": "6018edd8-56da-4a67-95ef-3c5090756320",
+        "type": "REPORT_VIEW",
+        "id": "X00012"
+    },
+    {
+        "transaction_id": "6018edd8-56da-4a67-95ef-3c5090756320",
+        "type": "REPORT_VIEW",
+        "id": "X00005"
+    },
+    {
+        "transaction_id": "6018edd8-56da-4a67-95ef-3c5090756320",
+        "type": "REPORT_VIEW",
+        "id": "X00012"
+    },
+    {
+        "transaction_id": "d8a3fd3d-06d3-4d88-bc66-82c1d350b818",
+        "type": "SEARCH",
+        "term": "iste"
+    },
+    {
+        "transaction_id": "5a3bc774-768e-468f-88ff-50a2e5562667",
+        "type": "SEARCH",
+        "term": "dolores"
+    },
+    {
+        "transaction_id": "2f0ae8cc-c35c-4b58-9bd2-3dbb3571daa3",
+        "type": "SEARCH",
+        "term": "autem"
+    },
+    {
+        "transaction_id": "2f0ae8cc-c35c-4b58-9bd2-3dbb3571daa3",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00092",
+            "X00094",
+            "X00040",
+            "X00018"
+        ]
+    },
+    {
+        "transaction_id": "2f0ae8cc-c35c-4b58-9bd2-3dbb3571daa3",
+        "type": "REPORT_VIEW",
+        "id": "X00092"
+    },
+    {
+        "transaction_id": "2f0ae8cc-c35c-4b58-9bd2-3dbb3571daa3",
+        "type": "REPORT_VIEW",
+        "id": "X00092"
+    },
+    {
+        "transaction_id": "3fa668cc-6792-4e63-abe7-d4070ca53a8c",
+        "type": "SEARCH",
+        "term": "ipsa"
+    },
+    {
+        "transaction_id": "302b3d7e-67b8-4d6a-97c7-9b8aa4b9ecec",
+        "type": "SEARCH",
+        "term": "velit"
+    },
+    {
+        "transaction_id": "302b3d7e-67b8-4d6a-97c7-9b8aa4b9ecec",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00062",
+            "X00061"
+        ]
+    },
+    {
+        "transaction_id": "ae29dd52-a5c3-4578-b6f5-dec8bb82e5b4",
+        "type": "SEARCH",
+        "term": "nisi"
+    },
+    {
+        "transaction_id": "ae29dd52-a5c3-4578-b6f5-dec8bb82e5b4",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "ae29dd52-a5c3-4578-b6f5-dec8bb82e5b4",
+        "type": "REPORT_VIEW",
+        "id": "X00097"
+    },
+    {
+        "transaction_id": "ae29dd52-a5c3-4578-b6f5-dec8bb82e5b4",
+        "type": "REPORT_VIEW",
+        "id": "X00029"
+    },
+    {
+        "transaction_id": "526b40b2-0715-41fb-ae89-1921b1a5b8fa",
+        "type": "SEARCH",
+        "term": "quae"
+    },
+    {
+        "transaction_id": "526b40b2-0715-41fb-ae89-1921b1a5b8fa",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "526b40b2-0715-41fb-ae89-1921b1a5b8fa",
+        "type": "REPORT_VIEW",
+        "id": "X00089"
+    },
+    {
+        "transaction_id": "526b40b2-0715-41fb-ae89-1921b1a5b8fa",
+        "type": "REPORT_VIEW",
+        "id": "X00019"
+    },
+    {
+        "transaction_id": "526b40b2-0715-41fb-ae89-1921b1a5b8fa",
+        "type": "REPORT_VIEW",
+        "id": "X00055"
+    },
+    {
+        "transaction_id": "014a6fc5-60dd-421c-b7a0-b9d767618f86",
+        "type": "SEARCH",
+        "term": "iusto"
+    },
+    {
+        "transaction_id": "014a6fc5-60dd-421c-b7a0-b9d767618f86",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00082",
+            "X00070",
+            "X00006"
+        ]
+    },
+    {
+        "transaction_id": "a4f37c96-a60a-46e4-b5f0-e7db1a49fd68",
+        "type": "SEARCH",
+        "term": "alias"
+    },
+    {
+        "transaction_id": "a4f37c96-a60a-46e4-b5f0-e7db1a49fd68",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00080",
+            "X00016",
+            "X00012"
+        ]
+    },
+    {
+        "transaction_id": "a4f37c96-a60a-46e4-b5f0-e7db1a49fd68",
+        "type": "REPORT_VIEW",
+        "id": "X00012"
+    },
+    {
+        "transaction_id": "a4f37c96-a60a-46e4-b5f0-e7db1a49fd68",
+        "type": "REPORT_VIEW",
+        "id": "X00016"
+    },
+    {
+        "transaction_id": "a4f37c96-a60a-46e4-b5f0-e7db1a49fd68",
+        "type": "REPORT_VIEW",
+        "id": "X00080"
+    },
+    {
+        "transaction_id": "bf0ea80c-568d-4f57-b742-43752c19a960",
+        "type": "SEARCH",
+        "term": "nulla"
+    },
+    {
+        "transaction_id": "91008cde-3fde-46f5-855f-362f60497851",
+        "type": "SEARCH",
+        "term": "mollitia"
+    },
+    {
+        "transaction_id": "745fd133-a791-4d3b-9302-cef47237e6e1",
+        "type": "SEARCH",
+        "term": "repellendus"
+    },
+    {
+        "transaction_id": "745fd133-a791-4d3b-9302-cef47237e6e1",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00056",
+            "X00067"
+        ]
+    },
+    {
+        "transaction_id": "745fd133-a791-4d3b-9302-cef47237e6e1",
+        "type": "REPORT_VIEW",
+        "id": "X00067"
+    },
+    {
+        "transaction_id": "745fd133-a791-4d3b-9302-cef47237e6e1",
+        "type": "REPORT_VIEW",
+        "id": "X00067"
+    },
+    {
+        "transaction_id": "745fd133-a791-4d3b-9302-cef47237e6e1",
+        "type": "REPORT_VIEW",
+        "id": "X00067"
+    },
+    {
+        "transaction_id": "4988bfd3-c0b9-4e69-baaf-ab967b1d0d35",
+        "type": "SEARCH",
+        "term": "eveniet"
+    },
+    {
+        "transaction_id": "4988bfd3-c0b9-4e69-baaf-ab967b1d0d35",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00008",
+            "X00071",
+            "X00049",
+            "X00049"
+        ]
+    },
+    {
+        "transaction_id": "7114a294-ba3f-41be-9126-29689161d968",
+        "type": "SEARCH",
+        "term": "explicabo"
+    },
+    {
+        "transaction_id": "7114a294-ba3f-41be-9126-29689161d968",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00017",
+            "X00012"
+        ]
+    },
+    {
+        "transaction_id": "7114a294-ba3f-41be-9126-29689161d968",
+        "type": "REPORT_VIEW",
+        "id": "X00030"
+    },
+    {
+        "transaction_id": "7114a294-ba3f-41be-9126-29689161d968",
+        "type": "REPORT_VIEW",
+        "id": "X00017"
+    },
+    {
+        "transaction_id": "5841cbc2-fde1-4501-8b2e-39b8e14e1561",
+        "type": "SEARCH",
+        "term": "sint"
+    },
+    {
+        "transaction_id": "5841cbc2-fde1-4501-8b2e-39b8e14e1561",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00002",
+            "X00003",
+            "X00017",
+            "X00047"
+        ]
+    },
+    {
+        "transaction_id": "5841cbc2-fde1-4501-8b2e-39b8e14e1561",
+        "type": "REPORT_VIEW",
+        "id": "X00003"
+    },
+    {
+        "transaction_id": "5841cbc2-fde1-4501-8b2e-39b8e14e1561",
+        "type": "REPORT_VIEW",
+        "id": "X00047"
+    },
+    {
+        "transaction_id": "72211e09-e411-4899-a114-845dbd6011e3",
+        "type": "SEARCH",
+        "term": "nobis"
+    },
+    {
+        "transaction_id": "72211e09-e411-4899-a114-845dbd6011e3",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "51f42c1d-ab05-43a4-8f63-e6bd24bfdca2",
+        "type": "SEARCH",
+        "term": "tempore"
+    },
+    {
+        "transaction_id": "ac6c1b1d-c958-410a-8c49-ab9ff9a9d52f",
+        "type": "SEARCH",
+        "term": "sapiente"
+    },
+    {
+        "transaction_id": "ac6c1b1d-c958-410a-8c49-ab9ff9a9d52f",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00088",
+            "X00060",
+            "X00026"
+        ]
+    },
+    {
+        "transaction_id": "ff992126-2fb3-4c92-af89-0306f6f767ac",
+        "type": "SEARCH",
+        "term": "ratione"
+    },
+    {
+        "transaction_id": "ff992126-2fb3-4c92-af89-0306f6f767ac",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00055",
+            "X00064",
+            "X00093",
+            "X00071"
+        ]
+    },
+    {
+        "transaction_id": "cde7958c-594e-43a0-a534-60cf1908b6e3",
+        "type": "SEARCH",
+        "term": "eaque"
+    },
+    {
+        "transaction_id": "cde7958c-594e-43a0-a534-60cf1908b6e3",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00086",
+            "X00066",
+            "X00046"
+        ]
+    },
+    {
+        "transaction_id": "cde7958c-594e-43a0-a534-60cf1908b6e3",
+        "type": "REPORT_VIEW",
+        "id": "X00066"
+    },
+    {
+        "transaction_id": "cde7958c-594e-43a0-a534-60cf1908b6e3",
+        "type": "REPORT_VIEW",
+        "id": "X00066"
+    },
+    {
+        "transaction_id": "cde7958c-594e-43a0-a534-60cf1908b6e3",
+        "type": "REPORT_VIEW",
+        "id": "X00086"
+    },
+    {
+        "transaction_id": "12109500-021c-4704-b073-95c73f611d93",
+        "type": "SEARCH",
+        "term": "magni"
+    },
+    {
+        "transaction_id": "12109500-021c-4704-b073-95c73f611d93",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00055",
+            "X00001",
+            "X00053"
+        ]
+    },
+    {
+        "transaction_id": "12109500-021c-4704-b073-95c73f611d93",
+        "type": "REPORT_VIEW",
+        "id": "X00060"
+    },
+    {
+        "transaction_id": "12109500-021c-4704-b073-95c73f611d93",
+        "type": "REPORT_VIEW",
+        "id": "X00053"
+    },
+    {
+        "transaction_id": "12109500-021c-4704-b073-95c73f611d93",
+        "type": "REPORT_VIEW",
+        "id": "X00053"
+    },
+    {
+        "transaction_id": "dd4fe8e8-66e0-4b50-9c50-cbae83e99e9a",
+        "type": "SEARCH",
+        "term": "velit"
+    },
+    {
+        "transaction_id": "dd4fe8e8-66e0-4b50-9c50-cbae83e99e9a",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00059",
+            "X00039"
+        ]
+    },
+    {
+        "transaction_id": "563b2cb5-1ee3-4dae-9706-88294fe56248",
+        "type": "SEARCH",
+        "term": "error"
+    },
+    {
+        "transaction_id": "563b2cb5-1ee3-4dae-9706-88294fe56248",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "c31c134d-4ee2-417d-b5aa-8bc8fbc5cab6",
+        "type": "SEARCH",
+        "term": "ut"
+    },
+    {
+        "transaction_id": "c31c134d-4ee2-417d-b5aa-8bc8fbc5cab6",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "94416b09-9cba-4ea0-85df-cf4ad152c1d5",
+        "type": "SEARCH",
+        "term": "nesciunt"
+    },
+    {
+        "transaction_id": "dc2224b6-11df-478b-b44d-a8ef0674c0ca",
+        "type": "SEARCH",
+        "term": "aliquid"
+    },
+    {
+        "transaction_id": "dc2224b6-11df-478b-b44d-a8ef0674c0ca",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00051",
+            "X00087",
+            "X00019",
+            "X00037"
+        ]
+    },
+    {
+        "transaction_id": "144d27bb-35fc-4c53-b67e-06cf94fe094e",
+        "type": "SEARCH",
+        "term": "pariatur"
+    },
+    {
+        "transaction_id": "212a4c0e-49e9-4044-84fa-2580f87d8481",
+        "type": "SEARCH",
+        "term": "quas"
+    },
+    {
+        "transaction_id": "212a4c0e-49e9-4044-84fa-2580f87d8481",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00031",
+            "X00061",
+            "X00041",
+            "X00008"
+        ]
+    },
+    {
+        "transaction_id": "212a4c0e-49e9-4044-84fa-2580f87d8481",
+        "type": "REPORT_VIEW",
+        "id": "X00008"
+    },
+    {
+        "transaction_id": "e8adf981-7d16-4a1c-bb77-e4b49cf37f71",
+        "type": "SEARCH",
+        "term": "expedita"
+    },
+    {
+        "transaction_id": "e8adf981-7d16-4a1c-bb77-e4b49cf37f71",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00036"
+        ]
+    },
+    {
+        "transaction_id": "e8adf981-7d16-4a1c-bb77-e4b49cf37f71",
+        "type": "REPORT_VIEW",
+        "id": "X00053"
+    },
+    {
+        "transaction_id": "8868251e-c52a-48ee-814b-08281e117ba6",
+        "type": "SEARCH",
+        "term": "earum"
+    },
+    {
+        "transaction_id": "8868251e-c52a-48ee-814b-08281e117ba6",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00030",
+            "X00039",
+            "X00050",
+            "X00086"
+        ]
+    },
+    {
+        "transaction_id": "8868251e-c52a-48ee-814b-08281e117ba6",
+        "type": "REPORT_VIEW",
+        "id": "X00043"
+    },
+    {
+        "transaction_id": "4885048e-c1b8-45c4-9876-4f565b19ffcb",
+        "type": "SEARCH",
+        "term": "odit"
+    },
+    {
+        "transaction_id": "4885048e-c1b8-45c4-9876-4f565b19ffcb",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00042"
+        ]
+    },
+    {
+        "transaction_id": "cddb45f5-2488-4be6-a434-9d829e972fe7",
+        "type": "SEARCH",
+        "term": "quidem"
+    },
+    {
+        "transaction_id": "d417f67f-8915-4ee7-9daa-2c8a076aa746",
+        "type": "SEARCH",
+        "term": "optio"
+    },
+    {
+        "transaction_id": "d417f67f-8915-4ee7-9daa-2c8a076aa746",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00044"
+        ]
+    },
+    {
+        "transaction_id": "6d1bb861-e296-4949-a37f-4d56111e4db8",
+        "type": "SEARCH",
+        "term": "fugit"
+    },
+    {
+        "transaction_id": "089d2dfa-4e19-4e55-8221-2e2997524434",
+        "type": "SEARCH",
+        "term": "error"
+    },
+    {
+        "transaction_id": "7fe68e6e-cd5e-4b99-a87f-be1b16b5ce78",
+        "type": "SEARCH",
+        "term": "sequi"
+    },
+    {
+        "transaction_id": "6b4b223e-4bb9-4712-9e45-cb426e8ddc5e",
+        "type": "SEARCH",
+        "term": "corrupti"
+    },
+    {
+        "transaction_id": "b89bc955-b4ab-434c-a2ce-d984e954f6ab",
+        "type": "SEARCH",
+        "term": "dolor"
+    },
+    {
+        "transaction_id": "b89bc955-b4ab-434c-a2ce-d984e954f6ab",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00019",
+            "X00087"
+        ]
+    },
+    {
+        "transaction_id": "9a4c240a-2389-402a-a40a-099c1a884a64",
+        "type": "SEARCH",
+        "term": "dolorum"
+    },
+    {
+        "transaction_id": "9a4c240a-2389-402a-a40a-099c1a884a64",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00019",
+            "X00094"
+        ]
+    },
+    {
+        "transaction_id": "5c8bbd93-e3c7-4968-b7eb-fed7af509547",
+        "type": "SEARCH",
+        "term": "natus"
+    },
+    {
+        "transaction_id": "7aa8ac97-25ce-46f9-ab6d-bb48ea8bd90d",
+        "type": "SEARCH",
+        "term": "nihil"
+    },
+    {
+        "transaction_id": "7aa8ac97-25ce-46f9-ab6d-bb48ea8bd90d",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00031",
+            "X00077"
+        ]
+    },
+    {
+        "transaction_id": "7f6c9434-a3a0-443e-90e0-e4f500c14d35",
+        "type": "SEARCH",
+        "term": "dignissimos"
+    },
+    {
+        "transaction_id": "7f6c9434-a3a0-443e-90e0-e4f500c14d35",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00071",
+            "X00089",
+            "X00070"
+        ]
+    },
+    {
+        "transaction_id": "df410fdf-4697-4891-8085-74090e958191",
+        "type": "SEARCH",
+        "term": "commodi"
+    },
+    {
+        "transaction_id": "df410fdf-4697-4891-8085-74090e958191",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00057",
+            "X00042",
+            "X00090",
+            "X00064"
+        ]
+    },
+    {
+        "transaction_id": "df410fdf-4697-4891-8085-74090e958191",
+        "type": "REPORT_VIEW",
+        "id": "X00057"
+    },
+    {
+        "transaction_id": "df410fdf-4697-4891-8085-74090e958191",
+        "type": "REPORT_VIEW",
+        "id": "X00064"
+    },
+    {
+        "transaction_id": "df410fdf-4697-4891-8085-74090e958191",
+        "type": "REPORT_VIEW",
+        "id": "X00064"
+    },
+    {
+        "transaction_id": "0aaf2bc7-1a69-4b26-b44a-f7b8e2ad51e6",
+        "type": "SEARCH",
+        "term": "expedita"
+    },
+    {
+        "transaction_id": "0aaf2bc7-1a69-4b26-b44a-f7b8e2ad51e6",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00073"
+        ]
+    },
+    {
+        "transaction_id": "0aaf2bc7-1a69-4b26-b44a-f7b8e2ad51e6",
+        "type": "REPORT_VIEW",
+        "id": "X00073"
+    },
+    {
+        "transaction_id": "e7039f08-b2c7-4cb3-b408-2fe4d42ebc03",
+        "type": "SEARCH",
+        "term": "aut"
+    },
+    {
+        "transaction_id": "e7039f08-b2c7-4cb3-b408-2fe4d42ebc03",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00013",
+            "X00052",
+            "X00088",
+            "X00060"
+        ]
+    },
+    {
+        "transaction_id": "e7039f08-b2c7-4cb3-b408-2fe4d42ebc03",
+        "type": "REPORT_VIEW",
+        "id": "X00052"
+    },
+    {
+        "transaction_id": "e7039f08-b2c7-4cb3-b408-2fe4d42ebc03",
+        "type": "REPORT_VIEW",
+        "id": "X00060"
+    },
+    {
+        "transaction_id": "0e96c6ee-4863-470b-bea4-0b73bf7c3731",
+        "type": "SEARCH",
+        "term": "earum"
+    },
+    {
+        "transaction_id": "0e96c6ee-4863-470b-bea4-0b73bf7c3731",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00064",
+            "X00036",
+            "X00007"
+        ]
+    },
+    {
+        "transaction_id": "0e96c6ee-4863-470b-bea4-0b73bf7c3731",
+        "type": "REPORT_VIEW",
+        "id": "X00036"
+    },
+    {
+        "transaction_id": "0e96c6ee-4863-470b-bea4-0b73bf7c3731",
+        "type": "REPORT_VIEW",
+        "id": "X00064"
+    },
+    {
+        "transaction_id": "0e96c6ee-4863-470b-bea4-0b73bf7c3731",
+        "type": "REPORT_VIEW",
+        "id": "X00030"
+    },
+    {
+        "transaction_id": "ce97a017-1236-42bd-ac19-06deabbe589d",
+        "type": "SEARCH",
+        "term": "fugit"
+    },
+    {
+        "transaction_id": "6e0c9809-c8ea-4060-8d27-db33b57aa4a4",
+        "type": "SEARCH",
+        "term": "quia"
+    },
+    {
+        "transaction_id": "6e0c9809-c8ea-4060-8d27-db33b57aa4a4",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00024",
+            "X00092"
+        ]
+    },
+    {
+        "transaction_id": "a9ade8d9-5222-4fdd-9199-d0f6c504db10",
+        "type": "SEARCH",
+        "term": "quod"
+    },
+    {
+        "transaction_id": "a9ade8d9-5222-4fdd-9199-d0f6c504db10",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00011",
+            "X00063"
+        ]
+    },
+    {
+        "transaction_id": "0f9fb6f1-a505-4a4a-856c-15d66aaa77a5",
+        "type": "SEARCH",
+        "term": "rerum"
+    },
+    {
+        "transaction_id": "0f9fb6f1-a505-4a4a-856c-15d66aaa77a5",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00031",
+            "X00077",
+            "X00068",
+            "X00021"
+        ]
+    },
+    {
+        "transaction_id": "0f9fb6f1-a505-4a4a-856c-15d66aaa77a5",
+        "type": "REPORT_VIEW",
+        "id": "X00068"
+    },
+    {
+        "transaction_id": "0f9fb6f1-a505-4a4a-856c-15d66aaa77a5",
+        "type": "REPORT_VIEW",
+        "id": "X00031"
+    },
+    {
+        "transaction_id": "0f9fb6f1-a505-4a4a-856c-15d66aaa77a5",
+        "type": "REPORT_VIEW",
+        "id": "X00068"
+    },
+    {
+        "transaction_id": "3d84cf91-0133-4264-a6d7-a547503e9471",
+        "type": "SEARCH",
+        "term": "voluptatem"
+    },
+    {
+        "transaction_id": "3d84cf91-0133-4264-a6d7-a547503e9471",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00034",
+            "X00045"
+        ]
+    },
+    {
+        "transaction_id": "3d84cf91-0133-4264-a6d7-a547503e9471",
+        "type": "REPORT_VIEW",
+        "id": "X00045"
+    },
+    {
+        "transaction_id": "ff223a7a-1955-4a66-8da2-a71ba016606a",
+        "type": "SEARCH",
+        "term": "est"
+    },
+    {
+        "transaction_id": "ff223a7a-1955-4a66-8da2-a71ba016606a",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00057",
+            "X00051"
+        ]
+    },
+    {
+        "transaction_id": "ff223a7a-1955-4a66-8da2-a71ba016606a",
+        "type": "REPORT_VIEW",
+        "id": "X00036"
+    },
+    {
+        "transaction_id": "017be433-949f-41b1-977e-ff0ebb7cb8bf",
+        "type": "SEARCH",
+        "term": "repellendus"
+    },
+    {
+        "transaction_id": "017be433-949f-41b1-977e-ff0ebb7cb8bf",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00063",
+            "X00008",
+            "X00001"
+        ]
+    },
+    {
+        "transaction_id": "5e5f3ad3-28ec-4cbe-813e-2bb0d8b544f2",
+        "type": "SEARCH",
+        "term": "delectus"
+    },
+    {
+        "transaction_id": "8efd1cdc-a4ba-4cd1-b1a0-a2d7a51ba5b3",
+        "type": "SEARCH",
+        "term": "porro"
+    },
+    {
+        "transaction_id": "8efd1cdc-a4ba-4cd1-b1a0-a2d7a51ba5b3",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00022",
+            "X00013",
+            "X00070",
+            "X00009"
+        ]
+    },
+    {
+        "transaction_id": "8efd1cdc-a4ba-4cd1-b1a0-a2d7a51ba5b3",
+        "type": "REPORT_VIEW",
+        "id": "X00070"
+    },
+    {
+        "transaction_id": "8efd1cdc-a4ba-4cd1-b1a0-a2d7a51ba5b3",
+        "type": "REPORT_VIEW",
+        "id": "X00013"
+    },
+    {
+        "transaction_id": "8efd1cdc-a4ba-4cd1-b1a0-a2d7a51ba5b3",
+        "type": "REPORT_VIEW",
+        "id": "X00047"
+    },
+    {
+        "transaction_id": "ae84379c-95dc-4af1-971b-82ab767600e3",
+        "type": "SEARCH",
+        "term": "quasi"
+    },
+    {
+        "transaction_id": "ae84379c-95dc-4af1-971b-82ab767600e3",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00029"
+        ]
+    },
+    {
+        "transaction_id": "3bfc36f7-783d-4a29-a2d6-c9dcf7331102",
+        "type": "SEARCH",
+        "term": "tempore"
+    },
+    {
+        "transaction_id": "3bfc36f7-783d-4a29-a2d6-c9dcf7331102",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "363b54d0-47fe-4060-a955-b25e96444117",
+        "type": "SEARCH",
+        "term": "possimus"
+    },
+    {
+        "transaction_id": "68197847-6115-4016-9e21-5acef79cea1a",
+        "type": "SEARCH",
+        "term": "corporis"
+    },
+    {
+        "transaction_id": "68197847-6115-4016-9e21-5acef79cea1a",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "68197847-6115-4016-9e21-5acef79cea1a",
+        "type": "REPORT_VIEW",
+        "id": "X00096"
+    },
+    {
+        "transaction_id": "5adeb3db-2db7-4b38-9a22-af423d884f86",
+        "type": "SEARCH",
+        "term": "dolorem"
+    },
+    {
+        "transaction_id": "5adeb3db-2db7-4b38-9a22-af423d884f86",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00042",
+            "X00032",
+            "X00059",
+            "X00012"
+        ]
+    },
+    {
+        "transaction_id": "5adeb3db-2db7-4b38-9a22-af423d884f86",
+        "type": "REPORT_VIEW",
+        "id": "X00016"
+    },
+    {
+        "transaction_id": "5adeb3db-2db7-4b38-9a22-af423d884f86",
+        "type": "REPORT_VIEW",
+        "id": "X00059"
+    },
+    {
+        "transaction_id": "5adeb3db-2db7-4b38-9a22-af423d884f86",
+        "type": "REPORT_VIEW",
+        "id": "X00012"
+    },
+    {
+        "transaction_id": "2ce4be26-9558-44c6-9de0-f8fd8b632c5f",
+        "type": "SEARCH",
+        "term": "perspiciatis"
+    },
+    {
+        "transaction_id": "2ce4be26-9558-44c6-9de0-f8fd8b632c5f",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00096",
+            "X00033"
+        ]
+    },
+    {
+        "transaction_id": "2ce4be26-9558-44c6-9de0-f8fd8b632c5f",
+        "type": "REPORT_VIEW",
+        "id": "X00096"
+    },
+    {
+        "transaction_id": "2ce4be26-9558-44c6-9de0-f8fd8b632c5f",
+        "type": "REPORT_VIEW",
+        "id": "X00059"
+    },
+    {
+        "transaction_id": "2ce4be26-9558-44c6-9de0-f8fd8b632c5f",
+        "type": "REPORT_VIEW",
+        "id": "X00053"
+    },
+    {
+        "transaction_id": "b233b4c7-4930-4c26-ac68-602da108d756",
+        "type": "SEARCH",
+        "term": "est"
+    },
+    {
+        "transaction_id": "b233b4c7-4930-4c26-ac68-602da108d756",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00079",
+            "X00078",
+            "X00003",
+            "X00084"
+        ]
+    },
+    {
+        "transaction_id": "b233b4c7-4930-4c26-ac68-602da108d756",
+        "type": "REPORT_VIEW",
+        "id": "X00096"
+    },
+    {
+        "transaction_id": "b233b4c7-4930-4c26-ac68-602da108d756",
+        "type": "REPORT_VIEW",
+        "id": "X00003"
+    },
+    {
+        "transaction_id": "0af842e6-93ea-49ba-836b-fe5a79c54cc6",
+        "type": "SEARCH",
+        "term": "dicta"
+    },
+    {
+        "transaction_id": "0af842e6-93ea-49ba-836b-fe5a79c54cc6",
+        "type": "SEARCH_RESULTS",
+        "results": []
+    },
+    {
+        "transaction_id": "14349609-5d92-43d5-b118-a027f8d4dcac",
+        "type": "SEARCH",
+        "term": "veritatis"
+    },
+    {
+        "transaction_id": "ccff7223-ed40-4e41-b46a-7883438a964c",
+        "type": "SEARCH",
+        "term": "pariatur"
+    },
+    {
+        "transaction_id": "ccff7223-ed40-4e41-b46a-7883438a964c",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00003",
+            "X00067",
+            "X00004",
+            "X00016"
+        ]
+    },
+    {
+        "transaction_id": "3994f6c7-c52f-43c2-99a4-0ce14843cc77",
+        "type": "SEARCH",
+        "term": "voluptatibus"
+    },
+    {
+        "transaction_id": "b8edcb1f-519a-4074-8c20-8bee41c8a471",
+        "type": "SEARCH",
+        "term": "aut"
+    },
+    {
+        "transaction_id": "70b893d6-42bd-48b9-94e8-65caad4a9147",
+        "type": "SEARCH",
+        "term": "eius"
+    },
+    {
+        "transaction_id": "70b893d6-42bd-48b9-94e8-65caad4a9147",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00061",
+            "X00058"
+        ]
+    },
+    {
+        "transaction_id": "7824acdf-15fa-455e-8588-f7a38b43ee80",
+        "type": "SEARCH",
+        "term": "quae"
+    },
+    {
+        "transaction_id": "7824acdf-15fa-455e-8588-f7a38b43ee80",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00078",
+            "X00001"
+        ]
+    },
+    {
+        "transaction_id": "7824acdf-15fa-455e-8588-f7a38b43ee80",
+        "type": "REPORT_VIEW",
+        "id": "X00001"
+    },
+    {
+        "transaction_id": "7824acdf-15fa-455e-8588-f7a38b43ee80",
+        "type": "REPORT_VIEW",
+        "id": "X00078"
+    },
+    {
+        "transaction_id": "7824acdf-15fa-455e-8588-f7a38b43ee80",
+        "type": "REPORT_VIEW",
+        "id": "X00001"
+    },
+    {
+        "transaction_id": "d5da7ef9-91fb-4ba5-91d2-7fdacb5df881",
+        "type": "SEARCH",
+        "term": "sunt"
+    },
+    {
+        "transaction_id": "d5da7ef9-91fb-4ba5-91d2-7fdacb5df881",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00031",
+            "X00085",
+            "X00025",
+            "X00005"
+        ]
+    },
+    {
+        "transaction_id": "d5da7ef9-91fb-4ba5-91d2-7fdacb5df881",
+        "type": "REPORT_VIEW",
+        "id": "X00027"
+    },
+    {
+        "transaction_id": "3f893468-a464-4430-acf4-ba456cde8117",
+        "type": "SEARCH",
+        "term": "debitis"
+    },
+    {
+        "transaction_id": "3f893468-a464-4430-acf4-ba456cde8117",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00003",
+            "X00013",
+            "X00069",
+            "X00050"
+        ]
+    },
+    {
+        "transaction_id": "3f893468-a464-4430-acf4-ba456cde8117",
+        "type": "REPORT_VIEW",
+        "id": "X00069"
+    },
+    {
+        "transaction_id": "3f893468-a464-4430-acf4-ba456cde8117",
+        "type": "REPORT_VIEW",
+        "id": "X00088"
+    },
+    {
+        "transaction_id": "3f893468-a464-4430-acf4-ba456cde8117",
+        "type": "REPORT_VIEW",
+        "id": "X00069"
+    },
+    {
+        "transaction_id": "bef6daea-ad72-4807-80a2-dac09a4d51a4",
+        "type": "SEARCH",
+        "term": "quos"
+    },
+    {
+        "transaction_id": "bc7ddc0d-879d-4e4b-9f4c-6e1cb9995228",
+        "type": "SEARCH",
+        "term": "ut"
+    },
+    {
+        "transaction_id": "bc7ddc0d-879d-4e4b-9f4c-6e1cb9995228",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00068",
+            "X00090"
+        ]
+    },
+    {
+        "transaction_id": "bc7ddc0d-879d-4e4b-9f4c-6e1cb9995228",
+        "type": "REPORT_VIEW",
+        "id": "X00090"
+    },
+    {
+        "transaction_id": "bc7ddc0d-879d-4e4b-9f4c-6e1cb9995228",
+        "type": "REPORT_VIEW",
+        "id": "X00068"
+    },
+    {
+        "transaction_id": "bc7ddc0d-879d-4e4b-9f4c-6e1cb9995228",
+        "type": "REPORT_VIEW",
+        "id": "X00090"
+    },
+    {
+        "transaction_id": "22f1fc36-1b8e-4b94-ad99-bb73e0efae2a",
+        "type": "SEARCH",
+        "term": "deserunt"
+    },
+    {
+        "transaction_id": "f438c79b-cfbc-41a3-9a8d-38a9597a46d5",
+        "type": "SEARCH",
+        "term": "libero"
+    },
+    {
+        "transaction_id": "a7b7b09f-036a-4c41-aa02-993b3d1e5d7c",
+        "type": "SEARCH",
+        "term": "provident"
+    },
+    {
+        "transaction_id": "a7b7b09f-036a-4c41-aa02-993b3d1e5d7c",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00049",
+            "X00037",
+            "X00027"
+        ]
+    },
+    {
+        "transaction_id": "cd37ff19-a213-4843-9797-0d76ea191aa4",
+        "type": "SEARCH",
+        "term": "enim"
+    },
+    {
+        "transaction_id": "cd37ff19-a213-4843-9797-0d76ea191aa4",
+        "type": "SEARCH_RESULTS",
+        "results": [
+            "X00060"
+        ]
+    },
+    {
+        "transaction_id": "cd37ff19-a213-4843-9797-0d76ea191aa4",
+        "type": "REPORT_VIEW",
+        "id": "X00060"
+    },
+    {
+        "transaction_id": "cd37ff19-a213-4843-9797-0d76ea191aa4",
+        "type": "REPORT_VIEW",
+        "id": "X00034"
+    },
+    {
+        "transaction_id": "8cb526d2-4a2b-443c-98c3-501cbe574e30",
+        "type": "SEARCH",
+        "term": "corrupti"
+    },
+    {
+        "transaction_id": "70e3540a-3a04-4754-8956-49f71f9ebcac",
+        "type": "SEARCH",
+        "term": "maiores"
+    },
+    {
+        "transaction_id": "b957b0c9-1a98-4195-bb12-c6a94be3b158",
+        "type": "SEARCH",
+        "term": "porro"
+    }
+]
