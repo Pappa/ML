@@ -1,0 +1,3023 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='10.5' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <ISO8601PeriodTypes />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/TheNAFReport?rev=4.9' id='TheNAFReport' path='/workbooks' revision='4.9' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+        <calculation class='tableau' formula='#2023-04-01#' />
+        <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+      </column>
+      <column caption='Top N' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+      </column>
+      <column caption='Chosen Race' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;Khorne&quot;'>
+        <calculation class='tableau' formula='&quot;Khorne&quot;' />
+        <members>
+          <member value='&quot;Amazons&quot;' />
+          <member value='&quot;Bretonnians&quot;' />
+          <member value='&quot;Chaos&quot;' />
+          <member value='&quot;Chaos Dwarves&quot;' />
+          <member value='&quot;Chaos Pact&quot;' />
+          <member value='&quot;Dark Elves&quot;' />
+          <member value='&quot;Dwarves&quot;' />
+          <member value='&quot;Elves&quot;' />
+          <member value='&quot;Goblins&quot;' />
+          <member value='&quot;Halflings&quot;' />
+          <member value='&quot;High Elves&quot;' />
+          <member value='&quot;Humans&quot;' />
+          <member value='&quot;Khemri&quot;' />
+          <member value='&quot;Khorne&quot;' />
+          <member value='&quot;Lizardmen&quot;' />
+          <member value='&quot;Multiple Races&quot;' />
+          <member value='&quot;Necromantic&quot;' />
+          <member value='&quot;Norse&quot;' />
+          <member value='&quot;Nurgle&apos;s Rotters&quot;' />
+          <member value='&quot;Ogres&quot;' />
+          <member value='&quot;Orc&quot;' />
+          <member value='&quot;Skaven&quot;' />
+          <member value='&quot;Slann&quot;' />
+          <member value='&quot;Undead&quot;' />
+          <member value='&quot;Underworld&quot;' />
+          <member value='&quot;Vampires&quot;' />
+          <member value='&quot;Wood Elves&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Tournament Data Extract' inline='true' name='federated.1nkkz0712oyxk41bdit9814zswq1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tournament Data' name='hyper.0v1fkv81x7c7hq1b4och31ls932l'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/hyper_0v1fkv81x7c7hq1b4och31ls93.hyper' schema='Extract' sslmode='' tablename='Extract' username='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.0v1fkv81x7c7hq1b4och31ls932l' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.0v1fkv81x7c7hq1b4och31ls932l' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Variant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variant]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Variant</remote-alias>
+            <ordinal>0</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tournament</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tournament]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Tournament</remote-alias>
+            <ordinal>1</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>5662</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>46</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>5123</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Major]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Major</remote-alias>
+            <ordinal>4</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2120</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2092</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TO]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TO</remote-alias>
+            <ordinal>7</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1614</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TournamentID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TournamentID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TournamentID</remote-alias>
+            <ordinal>8</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>5733</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PlayerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PlayerID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PlayerID</remote-alias>
+            <ordinal>9</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3913</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prize Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prize Description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Prize Description</remote-alias>
+            <ordinal>10</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1761</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winners</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Winners]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Winners</remote-alias>
+            <ordinal>11</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAF Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAF Name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>NAF Name</remote-alias>
+            <ordinal>12</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3913</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>13</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>32</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Field_5]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Field_5</remote-alias>
+            <ordinal>14</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field_6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Field_6]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Field_6</remote-alias>
+            <ordinal>15</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field_7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Field_7]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Field_7</remote-alias>
+            <ordinal>16</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field_8</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Field_8]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Field_8</remote-alias>
+            <ordinal>17</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PlayerRace</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PlayerRace]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PlayerRace</remote-alias>
+            <ordinal>18</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nation]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Nation</remote-alias>
+            <ordinal>19</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>89</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Show Record</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Show Record]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Show Record</remote-alias>
+            <ordinal>20</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prize</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prize]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Prize</remote-alias>
+            <ordinal>21</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrizeOrder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PrizeOrder]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PrizeOrder</remote-alias>
+            <ordinal>22</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>23</ordinal>
+            <family>Extract</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>2141</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Size]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Size</remote-alias>
+            <ordinal>24</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>271</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rounds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rounds]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Rounds</remote-alias>
+            <ordinal>25</ordinal>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Month Filter - Tournament' datatype='boolean' name='[Calculation_154811265662971905]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_840484306959519746]=[Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Winner' datatype='string' name='[Calculation_689895194130341892]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Prize]=&apos;Winner&apos; then [NAF Name] END' />
+      </column>
+      <column caption='Month' datatype='datetime' name='[Calculation_840484306959519746]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date])' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Field 5' datatype='string' name='[Field_5]' role='dimension' type='nominal' />
+      <column caption='Field 6' datatype='string' name='[Field_6]' role='dimension' type='nominal' />
+      <column caption='Field 7' datatype='string' name='[Field_7]' role='dimension' type='nominal' />
+      <column caption='Field 8' datatype='string' name='[Field_8]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Player ID' datatype='string' name='[PlayerID]' role='dimension' type='nominal' />
+      <column caption='Player Race' datatype='string' name='[PlayerRace]' role='dimension' type='nominal' />
+      <column caption='Prize Order' datatype='string' name='[PrizeOrder]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' datatype-customized='true' name='[Size (copy 2)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Size]' />
+      </column>
+      <column caption='Tournament ID' datatype='string' name='[TournamentID]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Tournament]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+      <group caption='Tooltip (Tournament)' hidden='true' name='[Tooltip (Tournament)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Tournament]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Nation:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Deutschland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;switzerland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Slovak Republic&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wales&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;England&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Undisclosed&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;North Ireland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;United States of America&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Undisclosed&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SWEDEN&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NULL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;FRANCE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Scotland&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='hyper.0v1fkv81x7c7hq1b4och31ls932l' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Coach Data new Extract' inline='true' name='federated.1qedofq110aoq213vlhyu0487yqu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coach Data new' name='hyper.101bn5j1m9vjqt13vtzib0k00noi'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/hyper_101bn5j1m9vjqt13vtzib0k00n.hyper' schema='Extract' sslmode='' tablename='Extract' username='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.101bn5j1m9vjqt13vtzib0k00noi' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.101bn5j1m9vjqt13vtzib0k00noi' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>0</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>585735</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tournament_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tournament_id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>tournament_id</remote-alias>
+            <ordinal>1</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>21422</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>2</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>38308</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent Rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Opponent Rank]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent Rank</remote-alias>
+            <ordinal>3</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>38789</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TDs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TDs]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TDs</remote-alias>
+            <ordinal>4</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent TDs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Opponent TDs]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent TDs</remote-alias>
+            <ordinal>5</ordinal>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>6</ordinal>
+            <family>Extract</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>9494</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[MatchTime]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MatchTime</remote-alias>
+            <ordinal>7</ordinal>
+            <family>Extract</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>54608</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tournament_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tournament_name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>tournament_name</remote-alias>
+            <ordinal>8</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>21088</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>9</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>64</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>URL</remote-alias>
+            <ordinal>10</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>11</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>19023</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Major</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Major]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Major</remote-alias>
+            <ordinal>12</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variant]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>variant</remote-alias>
+            <ordinal>13</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coach</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Coach]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Coach</remote-alias>
+            <ordinal>14</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>29933</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nation]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Nation</remote-alias>
+            <ordinal>15</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>135</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent</remote-alias>
+            <ordinal>16</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>29311</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent Nation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent Nation]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent Nation</remote-alias>
+            <ordinal>17</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>120</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>18</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>42</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent Race]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent Race</remote-alias>
+            <ordinal>19</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>42</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>20</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent Result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent Result]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent Result</remote-alias>
+            <ordinal>21</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tiered</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tiered]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Tiered</remote-alias>
+            <ordinal>22</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stars</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stars]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Stars</remote-alias>
+            <ordinal>23</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Seat]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Seat</remote-alias>
+            <ordinal>24</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Game Description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Game Description</remote-alias>
+            <ordinal>25</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>367471</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race In</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race In]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Race In</remote-alias>
+            <ordinal>26</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>42</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tier]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Tier</remote-alias>
+            <ordinal>27</ordinal>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of Games (Tournament)' datatype='integer' name='[Calculation_-9158351291012726783]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [Seat]=&apos;Home&apos; then 1 else 0 END' />
+      </column>
+      <column caption='Win %' datatype='real' default-format='p0.0%' name='[Calculation_-9158351291015311360]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='case [Result]&#13;&#10;when &apos;W&apos; then 1&#13;&#10;when &apos;T&apos; then 0.5&#13;&#10;when &apos;L&apos; then 0&#13;&#10;END' />
+      </column>
+      <column caption='Most Recent' datatype='date' name='[Calculation_154811265660866560]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='max([date])' />
+      </column>
+      <column caption='Month Filter - Coach Data' datatype='boolean' name='[Calculation_154811265663307778]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_840484306959654915]=[Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Race Initial' datatype='string' name='[Calculation_154811265666543619]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='left([Race],1)' />
+      </column>
+      <column caption='Index' datatype='integer' name='[Calculation_154811265671217157]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Top N' datatype='boolean' name='[Calculation_408138724302225408]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_154811265671217157]&lt;=[Parameters].[Parameter 2]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Number of Games (Coach)' datatype='integer' name='[Calculation_500744012198326272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Overall' datatype='real' name='[Calculation_687080445671669761]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg([Calculation_-9158351291015311360])*sum([Calculation_-9158351291012726783])' />
+      </column>
+      <column caption='Race Colour' datatype='boolean' name='[Calculation_687080445713158146]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Race]=[Parameters].[Parameter 3]' />
+      </column>
+      <column caption='Number of Players' datatype='integer' name='[Calculation_689895194125295617]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{fixed [tournament_id]:COUNTD([Coach])}' />
+      </column>
+      <column caption='Size Rank' datatype='integer' name='[Calculation_689895194126028802]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='RANK(sum([Calculation_689895194125295617]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+      </column>
+      <column aggregation='Hour' caption='Match Time' datatype='datetime' name='[MatchTime]' role='dimension' type='ordinal' />
+      <column caption='Year Filter - Coach Data' datatype='boolean' name='[Month Filter - Coach Data (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='year([Calculation_840484306959654915])=year([Parameters].[Parameter 1])' />
+      </column>
+      <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Games (Tournament) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Number of Players (copy 2)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{fixed [tournament_id]:COUNTD([Coach])}' />
+      </column>
+      <column aggregation='Sum' caption='# Players' datatype='integer' name='[Number of Players (copy)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{fixed [tournament_id]:COUNTD([Coach])}' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Race Label' datatype='string' name='[Race Colour (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Race]=[Parameters].[Parameter 3] then [Race] END' />
+      </column>
+      <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Rank (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Rank]' />
+      </column>
+      <column caption='T Ds' datatype='real' name='[TDs]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Match Id' datatype='real' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Tournament Id' datatype='real' name='[tournament_id]' role='dimension' type='ordinal' />
+      <column caption='Tournament Name' datatype='string' name='[tournament_name]' role='dimension' type='nominal' />
+      <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_687080445713158146]' derivation='None' name='[none:Calculation_687080445713158146:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Race:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Dwarves&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bretonnians&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Orc&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nurgle&apos;s Rotters&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Skaven&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Elves&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Norse&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chaos Pact&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Humans&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vampires&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ogres&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Wood Elves&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Khorne&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dark Elves&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Halflings&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Khemri&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;High Elves&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Necromantic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chaos Dwarves&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Amazons&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lizardmen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Underworld&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Goblins&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chaos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Slann&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Undead&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Race:nk]' palette='BB Races' type='shape'>
+            <map to='BB Races/Amazon.png'>
+              <bucket>&quot;Amazon&quot;</bucket>
+            </map>
+            <map to='BB Races/Black Orc.png'>
+              <bucket>&quot;Black Orc&quot;</bucket>
+            </map>
+            <map to='BB Races/Bretonnian.png'>
+              <bucket>&quot;Bretonnian&quot;</bucket>
+            </map>
+            <map to='BB Races/Chaos Chosen.png'>
+              <bucket>&quot;Chaos Chosen&quot;</bucket>
+            </map>
+            <map to='BB Races/Chaos Dwarf.png'>
+              <bucket>&quot;Chaos Dwarf&quot;</bucket>
+            </map>
+            <map to='BB Races/Chaos Pact.png'>
+              <bucket>&quot;Chaos Renegade&quot;</bucket>
+            </map>
+            <map to='BB Races/Daemons of Khorne.png'>
+              <bucket>&quot;Daemons of Khorne&quot;</bucket>
+            </map>
+            <map to='BB Races/Dark Elf.png'>
+              <bucket>&quot;Dark Elf&quot;</bucket>
+            </map>
+            <map to='BB Races/Dwarf.png'>
+              <bucket>&quot;Dwarf&quot;</bucket>
+            </map>
+            <map to='BB Races/Elf Union.png'>
+              <bucket>&quot;Elf Union&quot;</bucket>
+            </map>
+            <map to='BB Races/Goblin.png'>
+              <bucket>&quot;Goblin&quot;</bucket>
+            </map>
+            <map to='BB Races/Halfling.png'>
+              <bucket>&quot;Halfling&quot;</bucket>
+            </map>
+            <map to='BB Races/Imperial Nobility.png'>
+              <bucket>&quot;Imperial Nobility&quot;</bucket>
+            </map>
+            <map to='BB Races/Lizardmen.png'>
+              <bucket>&quot;Lizardmen&quot;</bucket>
+            </map>
+            <map to='BB Races/Necromantic.png'>
+              <bucket>&quot;Necromantic Horror&quot;</bucket>
+            </map>
+            <map to='BB Races/Norse.png'>
+              <bucket>&quot;Norse&quot;</bucket>
+            </map>
+            <map to='BB Races/Nurgle.png'>
+              <bucket>&quot;Nurgle&quot;</bucket>
+            </map>
+            <map to='BB Races/Ogre.png'>
+              <bucket>&quot;Ogre&quot;</bucket>
+            </map>
+            <map to='BB Races/Old World Alliance.png'>
+              <bucket>&quot;Old World Alliance&quot;</bucket>
+            </map>
+            <map to='BB Races/Orc.png'>
+              <bucket>&quot;Orc&quot;</bucket>
+            </map>
+            <map to='BB Races/Shambling Undead.png'>
+              <bucket>&quot;Shambling Undead&quot;</bucket>
+            </map>
+            <map to='BB Races/Skaven.png'>
+              <bucket>&quot;Skaven&quot;</bucket>
+            </map>
+            <map to='BB Races/Slann.png'>
+              <bucket>&quot;Slann&quot;</bucket>
+            </map>
+            <map to='BB Races/Snotling.png'>
+              <bucket>&quot;Snotling&quot;</bucket>
+            </map>
+            <map to='BB Races/Tomb Kings.png'>
+              <bucket>&quot;Tomb Kings&quot;</bucket>
+            </map>
+            <map to='BB Races/Underworld Denizens.png'>
+              <bucket>&quot;Underworld Denizens&quot;</bucket>
+            </map>
+            <map to='BB Races/Vampire.png'>
+              <bucket>&quot;Vampire&quot;</bucket>
+            </map>
+            <map to='BB Races/Wood Elf.png'>
+              <bucket>&quot;Wood Elf&quot;</bucket>
+            </map>
+            <map to='BB Races/highelf.png'>
+              <bucket>&quot;High Elf&quot;</bucket>
+            </map>
+            <map to='BB Races/human.png'>
+              <bucket>&quot;Human&quot;</bucket>
+            </map>
+            <map to='Races/amazon.png'>
+              <bucket>&quot;Amazons&quot;</bucket>
+            </map>
+            <map to='Races/bret.png'>
+              <bucket>&quot;Black orc&quot;</bucket>
+            </map>
+            <map to='Races/bret.png'>
+              <bucket>&quot;Bretonnians&quot;</bucket>
+            </map>
+            <map to='Races/chaos.png'>
+              <bucket>&quot;Chaos&quot;</bucket>
+            </map>
+            <map to='Races/chaosdwarf.png'>
+              <bucket>&quot;Chaos Dwarves&quot;</bucket>
+            </map>
+            <map to='Races/chaospact.png'>
+              <bucket>&quot;Chaos Pact&quot;</bucket>
+            </map>
+            <map to='Races/darkelf.png'>
+              <bucket>&quot;Dark Elves&quot;</bucket>
+            </map>
+            <map to='Races/dwarf.png'>
+              <bucket>&quot;Dwarves&quot;</bucket>
+            </map>
+            <map to='Races/elf.png'>
+              <bucket>&quot;Elves&quot;</bucket>
+            </map>
+            <map to='Races/goblin.png'>
+              <bucket>&quot;Goblins&quot;</bucket>
+            </map>
+            <map to='Races/halfling.png'>
+              <bucket>&quot;Halflings&quot;</bucket>
+            </map>
+            <map to='Races/highelf.png'>
+              <bucket>&quot;High Elves&quot;</bucket>
+            </map>
+            <map to='Races/human.png'>
+              <bucket>&quot;Humans&quot;</bucket>
+            </map>
+            <map to='Races/khemri.png'>
+              <bucket>&quot;Khemri&quot;</bucket>
+            </map>
+            <map to='Races/khorne.png'>
+              <bucket>&quot;Khorne&quot;</bucket>
+            </map>
+            <map to='Races/necromantic.png'>
+              <bucket>&quot;Necromantic&quot;</bucket>
+            </map>
+            <map to='Races/nurgle.png'>
+              <bucket>&quot;Nurgle&apos;s Rotters&quot;</bucket>
+            </map>
+            <map to='Races/ogre.png'>
+              <bucket>&quot;Ogres&quot;</bucket>
+            </map>
+            <map to='Races/undead.png'>
+              <bucket>&quot;Undead&quot;</bucket>
+            </map>
+            <map to='Races/underworld.png'>
+              <bucket>&quot;Underworld&quot;</bucket>
+            </map>
+            <map to='Races/vampire.png'>
+              <bucket>&quot;Vampires&quot;</bucket>
+            </map>
+            <map to='Races/woodelf.png'>
+              <bucket>&quot;Wood Elves&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_687080445713158146:nk]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+        <column caption='Top N' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+        </column>
+        <column caption='Chosen Race' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;Khorne&quot;'>
+          <calculation class='tableau' formula='&quot;Khorne&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='hyper.101bn5j1m9vjqt13vtzib0k00noi' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='NAF Commentary Extract' inline='true' name='federated.04siqhh0rqnc6s16z4m1k1xp3xgc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NAF Commentary' name='hyper.1pizefa03hueaq16znyaa1trqhqw'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/hyper_1pizefa03hueaq16znyaa1trqh.hyper' schema='Extract' sslmode='' tablename='Extract' username='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.1pizefa03hueaq16znyaa1trqhqw' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.1pizefa03hueaq16znyaa1trqhqw' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Commentary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Commentary]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Commentary</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Commentary Month Filter' datatype='boolean' name='[Calculation_827817945360666624]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Month]=[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='hyper.1pizefa03hueaq16znyaa1trqhqw' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+      <column caption='Month' datatype='datetime' name='[Calculation_840484306959519746]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date])' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Tournament]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+      <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='MDY' name='[md:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='MY' name='[my:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_840484306959519746]' derivation='None' name='[none:Calculation_840484306959519746:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Tournament]' derivation='None' name='[none:Tournament:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Week' name='[wk:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+      <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+      </column>
+      <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='MDY' name='[md:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='MY' name='[my:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_840484306959654915]' derivation='None' name='[none:Calculation_840484306959654915:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[tournament_name]' derivation='None' name='[none:tournament_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Quarter' name='[qr:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+      <column caption='Tournament Name' datatype='string' name='[tournament_name]' role='dimension' type='nominal' />
+      <column-instance column='[date]' derivation='Quarter-Trunc' name='[tqr:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:ok]' pivot='key' type='ordinal' />
+      <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+      <column-instance column='[date]' derivation='Weekday' name='[wd:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Week' name='[wk:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.1nkkz0712oyxk41bdit9814zswq1' target='federated.1qedofq110aoq213vlhyu0487yqu'>
+      <column-mapping>
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[dy:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[dy:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[md:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[md:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[mn:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[mn:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[my:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[my:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_840484306959519746:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_840484306959654915:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[none:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Nation:nk]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Nation:nk]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Tournament:nk]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[none:tournament_name:nk]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[none:variant:nk]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[qr:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[qr:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[tdy:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[tdy:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[tmn:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[tmn:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[tqr:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[tqr:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[twk:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[twk:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[tyr:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[tyr:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[wd:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[wd:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[wk:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[wk:date:ok]' />
+        <map key='[federated.1nkkz0712oyxk41bdit9814zswq1].[yr:Date:ok]' value='[federated.1qedofq110aoq213vlhyu0487yqu].[yr:date:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1nkkz0712oyxk41bdit9814zswq1'>
+      <datasources>
+        <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+        <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+        <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' context='true'>
+        <groupfilter function='member' level='[none:Variant:nk]' member='&quot;BB 2020&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' />
+      </filter>
+    </shared-view>
+    <shared-view name='federated.1qedofq110aoq213vlhyu0487yqu'>
+      <datasources>
+        <datasource caption='Coach Data new Extract' name='federated.1qedofq110aoq213vlhyu0487yqu' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+        <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+        <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+        <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+        <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' context='true'>
+        <groupfilter function='member' level='[none:Variant:nk]' member='&quot;BB 2020&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.1qedofq110aoq213vlhyu0487yqu].[none:variant:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Commentary WS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NAF Commentary Extract' name='federated.04siqhh0rqnc6s16z4m1k1xp3xgc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.04siqhh0rqnc6s16z4m1k1xp3xgc'>
+            <column caption='Commentary Month Filter' datatype='boolean' name='[Calculation_827817945360666624]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Month]=[Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='string' name='[Commentary]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Month]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_827817945360666624]' derivation='None' name='[none:Calculation_827817945360666624:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Commentary]' derivation='None' name='[none:Commentary:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04siqhh0rqnc6s16z4m1k1xp3xgc].[none:Calculation_827817945360666624:nk]'>
+            <groupfilter function='member' level='[none:Calculation_827817945360666624:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04siqhh0rqnc6s16z4m1k1xp3xgc].[none:Calculation_827817945360666624:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' value='top' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04siqhh0rqnc6s16z4m1k1xp3xgc].[none:Commentary:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#666666'>&lt;</run>
+                <run fontcolor='#666666'>[federated.04siqhh0rqnc6s16z4m1k1xp3xgc].[none:Commentary:nk]</run>
+                <run fontcolor='#666666'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{76A4A7FB-B2CD-4B0B-B25A-54EC9753BF52}' />
+    </worksheet>
+    <worksheet name='Games This Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coach Data new Extract' name='federated.1qedofq110aoq213vlhyu0487yqu' />
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+            <column caption='Top N' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+            <column caption='Month Filter - Coach Data' datatype='boolean' name='[Calculation_154811265663307778]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_840484306959654915]=[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Index' datatype='integer' name='[Calculation_154811265671217157]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Top N' datatype='boolean' name='[Calculation_408138724302225408]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_154811265671217157]&lt;=[Parameters].[Parameter 2]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Number of Games (Coach)' datatype='integer' name='[Calculation_500744012198326272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+            </column>
+            <column datatype='string' name='[Coach]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_154811265663307778]' derivation='None' name='[none:Calculation_154811265663307778:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Coach]' derivation='None' name='[none:Coach:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_500744012198326272]' derivation='Sum' name='[sum:Calculation_500744012198326272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_154811265671217157]' derivation='User' name='[usr:Calculation_154811265671217157:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Calculation_408138724302225408]' derivation='User' name='[usr:Calculation_408138724302225408:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+              <table-calc field='[federated.1qedofq110aoq213vlhyu0487yqu].[Calculation_154811265671217157]' ordering-type='Columns' />
+            </column-instance>
+            <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]' context='true'>
+            <groupfilter function='member' level='[none:Calculation_154811265663307778:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk]' direction='DESC' using='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Calculation_500744012198326272:qk]' />
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_408138724302225408:nk:1]'>
+            <groupfilter function='member' level='[usr:Calculation_408138724302225408:nk:1]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_408138724302225408:nk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_154811265671217157:ok]' value='48' />
+            <format attr='width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Nation:nk]' value='156' />
+            <format attr='width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk]' value='132' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Calculation_500744012198326272:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_154811265671217157:ok] / ([federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk] / [federated.1qedofq110aoq213vlhyu0487yqu].[none:Nation:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2BC651A2-E9C7-4CD4-A767-F18D4BF9FD9A}' />
+    </worksheet>
+    <worksheet name='Games This Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coach Data new Extract' name='federated.1qedofq110aoq213vlhyu0487yqu' />
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+            <column caption='Top N' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+            <column caption='Index' datatype='integer' name='[Calculation_154811265671217157]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Top N' datatype='boolean' name='[Calculation_408138724302225408]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_154811265671217157]&lt;=[Parameters].[Parameter 2]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Number of Games (Coach)' datatype='integer' name='[Calculation_500744012198326272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+            </column>
+            <column datatype='string' name='[Coach]' role='dimension' type='nominal' />
+            <column caption='Year Filter - Coach Data' datatype='boolean' name='[Month Filter - Coach Data (copy)]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='year([Calculation_840484306959654915])=year([Parameters].[Parameter 1])' />
+            </column>
+            <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Coach]' derivation='None' name='[none:Coach:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month Filter - Coach Data (copy)]' derivation='None' name='[none:Month Filter - Coach Data (copy):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_500744012198326272]' derivation='Sum' name='[sum:Calculation_500744012198326272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_154811265671217157]' derivation='User' name='[usr:Calculation_154811265671217157:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Calculation_408138724302225408]' derivation='User' name='[usr:Calculation_408138724302225408:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+              <table-calc field='[federated.1qedofq110aoq213vlhyu0487yqu].[Calculation_154811265671217157]' ordering-type='Columns' />
+            </column-instance>
+            <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk]' direction='DESC' using='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Calculation_500744012198326272:qk]' />
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Month Filter - Coach Data (copy):nk]' context='true'>
+            <groupfilter function='member' level='[none:Month Filter - Coach Data (copy):nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_408138724302225408:nk:1]'>
+            <groupfilter function='member' level='[usr:Calculation_408138724302225408:nk:1]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[none:Month Filter - Coach Data (copy):nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_408138724302225408:nk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_154811265671217157:ok]' value='48' />
+            <format attr='width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk]' value='132' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Calculation_500744012198326272:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1qedofq110aoq213vlhyu0487yqu].[usr:Calculation_154811265671217157:ok] / ([federated.1qedofq110aoq213vlhyu0487yqu].[none:Coach:nk] / [federated.1qedofq110aoq213vlhyu0487yqu].[none:Nation:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9E7DC2A4-3C43-41C7-86EE-3BC0DCB3FEE9}' />
+    </worksheet>
+    <worksheet name='Prizes WS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column caption='Month Filter - Tournament' datatype='boolean' name='[Calculation_154811265662971905]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_840484306959519746]=[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959519746]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[NAF Name]' role='dimension' type='nominal' />
+            <column caption='Prize Order' datatype='string' name='[PrizeOrder]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Prize]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Tournament]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_154811265662971905]' derivation='None' name='[none:Calculation_154811265662971905:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NAF Name]' derivation='None' name='[none:NAF Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Prize]' derivation='None' name='[none:Prize:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PrizeOrder]' derivation='None' name='[none:PrizeOrder:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tournament]' derivation='None' name='[none:Tournament:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_154811265662971905:nk]'>
+            <groupfilter function='member' level='[none:Calculation_154811265662971905:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Prize:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Best Painted&quot;' function='range' level='[none:Prize:nk]' to='&quot;Most Touchdowns&quot;' />
+              <groupfilter from='&quot;Runner up&quot;' function='range' level='[none:Prize:nk]' to='&quot;Winner&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_154811265662971905:nk]</column>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Prize:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:PrizeOrder:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-style' value='dashed' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dashed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:NAF Name:nk]' />
+              <text column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Race:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Tournament:nk]</rows>
+        <cols>([federated.1nkkz0712oyxk41bdit9814zswq1].[none:PrizeOrder:nk] / [federated.1nkkz0712oyxk41bdit9814zswq1].[none:Prize:nk])</cols>
+      </table>
+      <simple-id uuid='{B5454EC7-7ADC-4B0A-9ED4-91DDD547B450}' />
+    </worksheet>
+    <worksheet name='Race Success and Popularity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coach Data new Extract' name='federated.1qedofq110aoq213vlhyu0487yqu' />
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+            <column caption='Win %' datatype='real' default-format='p0.0%' name='[Calculation_-9158351291015311360]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='case [Result]&#13;&#10;when &apos;W&apos; then 1&#13;&#10;when &apos;T&apos; then 0.5&#13;&#10;when &apos;L&apos; then 0&#13;&#10;END' />
+            </column>
+            <column caption='Month Filter - Coach Data' datatype='boolean' name='[Calculation_154811265663307778]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_840484306959654915]=[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+            </column>
+            <column datatype='integer' name='[Number of Games (Tournament) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Race In]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+            <column-instance column='[Race]' derivation='Attribute' name='[attr:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_-9158351291015311360]' derivation='Avg' name='[avg:Calculation_-9158351291015311360:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_154811265663307778]' derivation='None' name='[none:Calculation_154811265663307778:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race In]' derivation='None' name='[none:Race In:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Games (Tournament) (copy)]' derivation='Sum' name='[sum:Number of Games (Tournament) (copy):qk]' pivot='key' type='quantitative' />
+            <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]'>
+            <groupfilter function='member' level='[none:Calculation_154811265663307778:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' field-type='quantitative' max='0.80000000000000004' min='0.29999999999999999' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]' scope='cols' value='Number of Games' />
+            <format attr='subtitle' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' scope='rows' value='Win %' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Race:nk]' value='120' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Race In:nk]' />
+              <tooltip column='[federated.1qedofq110aoq213vlhyu0487yqu].[attr:Race:nk]' />
+              <lod column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Race:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Race:&#9;</run>
+                <run bold='true' fontcolor='#787878'><![CDATA[<[federated.1qedofq110aoq213vlhyu0487yqu].[none:Race:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win %:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Games:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.75762432813644409' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]</rows>
+        <cols>[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]</cols>
+      </table>
+      <simple-id uuid='{3164F11A-D7AF-4A30-9883-FFB7BB177D72}' />
+    </worksheet>
+    <worksheet name='Race Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coach Data new Extract' name='federated.1qedofq110aoq213vlhyu0487yqu' />
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1qedofq110aoq213vlhyu0487yqu'>
+            <column caption='Win %' datatype='real' default-format='p0.0%' name='[Calculation_-9158351291015311360]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='case [Result]&#13;&#10;when &apos;W&apos; then 1&#13;&#10;when &apos;T&apos; then 0.5&#13;&#10;when &apos;L&apos; then 0&#13;&#10;END' />
+            </column>
+            <column caption='Month Filter - Coach Data' datatype='boolean' name='[Calculation_154811265663307778]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_840484306959654915]=[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959654915]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[date])' />
+            </column>
+            <column datatype='integer' name='[Number of Games (Tournament) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Race In]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_-9158351291015311360]' derivation='Avg' name='[avg:Calculation_-9158351291015311360:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_154811265663307778]' derivation='None' name='[none:Calculation_154811265663307778:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race In]' derivation='None' name='[none:Race In:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variant]' derivation='None' name='[none:variant:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Games (Tournament) (copy)]' derivation='Sum' name='[sum:Number of Games (Tournament) (copy):qk]' pivot='key' type='quantitative' />
+            <column caption='Variant' datatype='string' name='[variant]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]'>
+            <groupfilter function='member' level='[none:Calculation_154811265663307778:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qedofq110aoq213vlhyu0487yqu].[none:variant:nk]'>
+            <groupfilter function='level-members' level='[none:variant:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[none:variant:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[none:Calculation_154811265663307778:nk]</column>
+            <column>[federated.1qedofq110aoq213vlhyu0487yqu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1qedofq110aoq213vlhyu0487yqu].[sum:Number of Games (Tournament) (copy):qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1qedofq110aoq213vlhyu0487yqu].[avg:Calculation_-9158351291015311360:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qedofq110aoq213vlhyu0487yqu].[Multiple Values]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1qedofq110aoq213vlhyu0487yqu].[none:Race In:nk] / [federated.1qedofq110aoq213vlhyu0487yqu].[none:Race:nk])</rows>
+        <cols>[federated.1qedofq110aoq213vlhyu0487yqu].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F5F748F8-52F2-490E-95AA-FFA062FCD89B}' />
+    </worksheet>
+    <worksheet name='Tournament Table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+              <calculation class='tableau' formula='#2023-04-01#' />
+              <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+            <column caption='Month Filter - Tournament' datatype='boolean' name='[Calculation_154811265662971905]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_840484306959519746]=[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Winner' datatype='string' name='[Calculation_689895194130341892]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Prize]=&apos;Winner&apos; then [NAF Name] END' />
+            </column>
+            <column caption='Month' datatype='datetime' name='[Calculation_840484306959519746]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[NAF Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Prize]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Rounds]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='real' datatype-customized='true' name='[Size (copy 2)]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Size]' />
+            </column>
+            <column datatype='real' name='[Size]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Tournament]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_154811265662971905]' derivation='None' name='[none:Calculation_154811265662971905:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_689895194130341892]' derivation='None' name='[none:Calculation_689895194130341892:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nation]' derivation='None' name='[none:Nation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rounds]' derivation='None' name='[none:Rounds:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Size (copy 2)]' derivation='None' name='[none:Size (copy 2):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Size]' derivation='None' name='[none:Size:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Tournament]' derivation='None' name='[none:Tournament:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_154811265662971905:nk]'>
+            <groupfilter function='member' level='[none:Calculation_154811265662971905:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_689895194130341892:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_689895194130341892:nk]' />
+              <groupfilter function='member' level='[none:Calculation_689895194130341892:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size (copy 2):ok]' direction='DESC' />
+          <natural-sort column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size:ok]' direction='DESC' />
+          <slices>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]</column>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_689895194130341892:nk]</column>
+            <column>[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_154811265662971905:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Tournament:nk]' value='204' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Rounds:ok]' value='48' />
+            <format attr='width' field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size:ok]' value='60' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size (copy 2):ok]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+            <format attr='map-snap-zoom' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Race:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size (copy 2):ok] / ([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Tournament:nk] / ([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Country:nk] / ([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Size:ok] / ([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Rounds:ok] / ([federated.1nkkz0712oyxk41bdit9814zswq1].[none:Calculation_689895194130341892:nk] / [federated.1nkkz0712oyxk41bdit9814zswq1].[none:Nation:nk]))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8FD7DD92-8153-4690-AAFE-75E33159B61E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Commentary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>The NAF Report - &lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/TheNAFReport/Commentary?rev=' id='52717680' path='/workbooks/TheNAFReport' revision='' />
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#aa0000' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_51' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='827' minheight='1169' minwidth='827' preset-index='14' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='49' param='horz' type-v2='layout-flow' w='98066' x='967' y='684'>
+            <zone h='98632' id='16' type-v2='layout-basic' w='98066' x='967' y='684'>
+              <zone h='11463' id='9' is-scaled='1' param='Image/NAF_WC_Globe_300dpi.jpg' type-v2='bitmap' w='18339' x='80694' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4278' id='5' type-v2='title' w='79727' x='967' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='12832' id='51' type-v2='text' w='98066' x='967' y='12147'>
+                <formatted-text>
+                  <run>The NAF Report is a monthly summary of the NAF registered tournaments and games.  For an interactive version and other analysis visit </run>
+                  <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;https://public.tableau.com/profile/mike.sann0638.davies#!/&amp;quot;'>https://public.tableau.com/profile/mike.sann0638.davies#!/</run>
+                  <run>
+
+The data has limitations - there is no easily accessible information on whether tournaments have tiers, what the TV is and what stars are used in particular rosters.
+
+The win ratio used in the data is (Wins + 0.5xDraws) / Games.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7185' id='46' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='29384' x='967' y='4962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='7185' id='52' type-v2='empty' w='50343' x='30351' y='4962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='74337' id='53' name='Commentary WS' show-title='false' w='98066' x='967' y='24979'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{4B5E7EC0-A68B-442C-AF85-CB8DFB21A5B5}' />
+    </dashboard>
+    <dashboard name='Games'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>The NAF Report - &lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/TheNAFReport/Games?rev=' id='52717682' path='/workbooks/TheNAFReport' revision='' />
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#aa0000' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='827' minheight='1169' minwidth='827' preset-index='14' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+        <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+        <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='54' param='horz' type-v2='layout-flow' w='98066' x='967' y='684'>
+            <zone h='98632' id='16' type-v2='layout-basic' w='98066' x='967' y='684'>
+              <zone h='11549' id='9' is-scaled='1' param='Image/NAF_WC_Globe_300dpi.jpg' type-v2='bitmap' w='18339' x='80694' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4962' id='5' type-v2='title' w='79727' x='967' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='67922' id='25' name='Race Success and Popularity' show-title='false' w='56228' x='967' y='31394'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6587' id='46' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='41234' x='967' y='5646'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='6587' id='50' mode='dropdown' name='Race Success and Popularity' param='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' type-v2='filter' w='38493' x='42201' y='5646'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='19161' id='51' name='Games This Month' w='49034' x='967' y='12233'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19161' id='52' name='Games This Year' w='49032' x='50001' y='12233'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='67922' id='55' name='Race Table' show-title='false' w='41838' x='57195' y='31394'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{EBC57A0F-A8C8-480A-BAEB-9B91F2D305D0}' />
+    </dashboard>
+    <dashboard name='Prizes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>The NAF Report - &lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/TheNAFReport/Prizes?rev=' id='52717683' path='/workbooks/TheNAFReport' revision='' />
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#aa0000' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='827' minheight='1169' minwidth='827' preset-index='14' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+        <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+        <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='49' param='horz' type-v2='layout-flow' w='98066' x='967' y='684'>
+            <zone h='98632' id='16' type-v2='layout-basic' w='98066' x='967' y='684'>
+              <zone h='11549' id='9' is-scaled='1' param='Image/NAF_WC_Globe_300dpi.jpg' type-v2='bitmap' w='18339' x='80694' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4962' id='5' type-v2='title' w='79727' x='967' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6587' id='46' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='40750' x='967' y='5646'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='6587' id='50' mode='dropdown' name='Prizes WS' param='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' type-v2='filter' w='38977' x='41717' y='5646'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='87083' id='51' name='Prizes WS' show-title='false' w='98066' x='967' y='12233'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{04D7A8CC-C229-4D44-B7EE-7AA34B5A6547}' />
+    </dashboard>
+    <dashboard name='Winners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>The NAF Report - &lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/TheNAFReport/Winners?rev=' id='52717681' path='/workbooks/TheNAFReport' revision='' />
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#aa0000' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_51' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='827' minheight='1169' minwidth='827' preset-index='14' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Tournament Data Extract' name='federated.1nkkz0712oyxk41bdit9814zswq1' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Choose Month' datatype='date' default-format='*mmmm yyyy' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2023-04-01#'>
+          <calculation class='tableau' formula='#2023-04-01#' />
+          <range granularity='1' max='#2024-02-01#' min='#2013-08-01#' period-type-v2='month' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1nkkz0712oyxk41bdit9814zswq1'>
+        <column datatype='string' name='[Variant]' role='dimension' type='nominal' />
+        <column-instance column='[Variant]' derivation='None' name='[none:Variant:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='49' param='horz' type-v2='layout-flow' w='98066' x='967' y='684'>
+            <zone h='98632' id='16' type-v2='layout-basic' w='98066' x='967' y='684'>
+              <zone h='11378' id='9' is-scaled='1' param='Image/NAF_WC_Globe_300dpi.jpg' type-v2='bitmap' w='18339' x='80694' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4278' id='5' type-v2='title' w='79727' x='967' y='684'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='87254' id='47' name='Tournament Table' show-title='false' w='98066' x='967' y='12062'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7100' id='50' mode='dropdown' name='Tournament Table' param='[federated.1nkkz0712oyxk41bdit9814zswq1].[none:Variant:nk]' type-v2='filter' w='26986' x='26723' y='4962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='7100' id='46' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='25756' x='967' y='4962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='7100' id='52' type-v2='empty' w='26985' x='53709' y='4962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{49F44ECA-78DA-472C-BBA9-CCEDD4DAF7CB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' name='Commentary'>
+      <viewpoints>
+        <viewpoint name='Commentary WS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='46' />
+      <simple-id uuid='{27AAEC8D-57CE-413C-9CB3-A1BDDCB5EDF8}' />
+    </window>
+    <window class='dashboard' name='Winners'>
+      <viewpoints>
+        <viewpoint name='Tournament Table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{60E6EEAE-84D0-4B2F-A26B-26270B1019A8}' />
+    </window>
+    <window class='dashboard' name='Games'>
+      <viewpoints>
+        <viewpoint name='Games This Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Games This Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Race Success and Popularity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Race Table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='51' />
+      <simple-id uuid='{3369935F-F4F8-4F79-9FDA-C11DEAFDEBDD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Prizes'>
+      <viewpoints>
+        <viewpoint name='Prizes WS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='46' />
+      <simple-id uuid='{88D99EC1-33C6-4AC1-A1EA-FD343B13E01D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Commentary WS'>
+      <cards>
+        <edge name='left'>
+          <strip size='234'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A072C3F-4F9C-4422-9819-DC67B2F8D454}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Games This Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='290'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5ECB2EB4-6B0F-41AE-BC91-C3A30D3CBDF4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Games This Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='270'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0268CC8F-F29D-4D3A-8649-D11681EA4B0A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Prizes WS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{CF898B1D-BC9E-466A-B904-EE937548003E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Race Success and Popularity'>
+      <cards>
+        <edge name='left'>
+          <strip size='252'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{814B609A-9CCB-4142-AE46-24DEEBB0ADC0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Race Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='252'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58FF3CA1-ADD9-4AB2-A7DA-6B725628E32F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Tournament Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='248'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{121588F9-EE37-4C29-BAD7-3A43093B8FC7}' />
+    </window>
+  </windows>
+</workbook>
