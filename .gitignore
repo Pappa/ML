@@ -4,4 +4,8 @@
 # OS
 .DS_Store
 
+
 run/*
+
+# Jupyter
+.ipynb_checkpoints
