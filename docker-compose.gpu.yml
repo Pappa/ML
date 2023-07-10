@@ -7,9 +7,7 @@ services:
       dockerfile: ./docker/Dockerfile.gpu
     tty: true
     volumes:
-      - ./data/:/app/data
       - ./notebooks/:/app/notebooks
-      - ./scripts/:/app/scripts
       - ./images/:/app/images
     deploy:
       resources:

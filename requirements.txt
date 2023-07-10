@@ -15,3 +15,4 @@ tensorflow==2.10.1
 tensorboard==2.10.1
 tensorflow_probability==0.18.0
 flake8-nb==0.5.2
+pyspark==3.4.1

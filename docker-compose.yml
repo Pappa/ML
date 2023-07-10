@@ -7,9 +7,7 @@ services:
       dockerfile: ./docker/Dockerfile
     tty: true
     volumes:
-      - ./data/:/app/data
       - ./notebooks/:/app/notebooks
-      - ./scripts/:/app/scripts
       - ./images/:/app/images
     ports:
         - "$JUPYTER_PORT:$JUPYTER_PORT"
