@@ -9,6 +9,7 @@ services:
     volumes:
       - ./notebooks/:/app/notebooks
       - ./images/:/app/images
+      - ./data/:/app/data
     ports:
         - "$JUPYTER_PORT:$JUPYTER_PORT"
         - "$TENSORBOARD_PORT:$TENSORBOARD_PORT"

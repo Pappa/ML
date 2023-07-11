@@ -9,6 +9,7 @@ services:
     volumes:
       - ./notebooks/:/app/notebooks
       - ./images/:/app/images
+      - ./data/:/app/data
     deploy:
       resources:
         reservations:
