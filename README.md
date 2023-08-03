@@ -20,6 +20,7 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 - [Handwriting digit classification](./notebooks/mnist.ipynb) with MNIST dataset using Tensorflow.
 - [Blood Bowl result prediction](./notebooks/Blood%20Bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/).
 - [Reuters data classification](./notebooks/reuters.ipynb) with Tensorflow. TODO: add more EDA and explanation to this notebook. I don't remember what it's classifying.
+- [Company Bankruptcy Prediction](https://www.kaggle.com/code/drpappa/company-bankruptcy-prediction) using [bankruptcy data](https://www.kaggle.com/datasets/fedesoriano/company-bankruptcy-prediction) from the Taiwan Economic Journal for the years 1999–2009
 
 ### Generative Adversarial Networks
 
