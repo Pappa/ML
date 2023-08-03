@@ -21,8 +21,6 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 - [Blood Bowl result prediction](./notebooks/Blood%20Bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/).
 - [Reuters data classification](./notebooks/reuters.ipynb) with Tensorflow. TODO: add more EDA and explanation to this notebook. I don't remember what it's classifying.
 
-
-
 ### Generative Adversarial Networks
 
 - [MiróBot](https://github.com/Pappa/MiroBot) - Generating art in the stype of Joan Miró and Mark Rothko, with moderate success. Unfortunately, the many previous failed attempts aren't documented.
