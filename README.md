@@ -17,6 +17,8 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 
 - [Handwriting digit classification](./notebooks/scit-learn-classification-ch3.ipynb) with MNIST dataset using scikit-learn.
 
+- [Blood Bowl result prediction](./notebooks/Blood%20Bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/).
+
 
 
 ### Generative Adversarial Networks
