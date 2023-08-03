@@ -12,13 +12,12 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 
 - [House price prediction](./notebooks/boston_housing.ipynb) with Boston housing dataset using Keras/Tensorflow.
 - [House price prediction](./notebooks/scikit-learn-regression-ch2.ipynb) with California housing dataset using scikit-learn.
+- [IMDB ratings](./notebooks/imdb.ipynb) with IMDB dataset using Tensorflow.
 
 ### Classification
 
 - [Handwriting digit classification](./notebooks/scit-learn-classification-ch3.ipynb) with MNIST dataset using scikit-learn.
-
 - [Handwriting digit classification](./notebooks/mnist.ipynb) with MNIST dataset using Tensorflow.
-
 - [Blood Bowl result prediction](./notebooks/Blood%20Bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/).
 
 
