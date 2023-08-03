@@ -10,6 +10,9 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 
 ### Regression
 
+- [House price prediction](./notebooks/boston_housing.ipynb) with Boston housing dataset using Keras/Tensorflow.
+- [House price prediction](./notebooks/scikit-learn-regression-ch2.ipynb) with California housing dataset using scikit-learn.
+
 ### Classification
 
 ### Generative Adversarial Networks
