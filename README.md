@@ -15,6 +15,10 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 
 ### Classification
 
+- [Handwriting digit classification](./notebooks/scit-learn-classification-ch3.ipynb) with MNIST dataset using scikit-learn.
+
+
+
 ### Generative Adversarial Networks
 
 - [MiróBot](https://github.com/Pappa/MiroBot) - Generating art in the stype of Joan Miró and Mark Rothko, with moderate success. Unfortunately, the many previous failed attempts aren't documented.
