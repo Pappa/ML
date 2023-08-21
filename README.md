@@ -19,9 +19,13 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 - [Handwriting digit classification](./notebooks/classification-tensorflow-mnist.ipynb) with MNIST dataset using Keras/Tensorflow.
 - [Blood Bowl result prediction](./notebooks/classification-scikit-learn-blood-bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/) using scikit-learn.
 -  [Classify IMDB movie reviews](./notebooks/regression-tensorflow-imdb.ipynb) as positive or negative using Keras/Tensorflow.
-- [Multi-class classification of irises](./notebooks/classification-scikit-learn-knn-iris.ipynb) using KNN with scikit-learn.
+- [Multi-class classification of Irises](./notebooks/classification-scikit-learn-knn-iris.ipynb) using KNN with scikit-learn.
 - [Multi-class classification of Reuters newswires](./notebooks/classification-tensorflow-reuters.ipynb) into 1 of 46 topics with Keras/Tensorflow.
 - [Company Bankruptcy Prediction](https://www.kaggle.com/code/drpappa/company-bankruptcy-prediction) using [bankruptcy data](https://www.kaggle.com/datasets/fedesoriano/company-bankruptcy-prediction) from the Taiwan Economic Journal for the years 1999–2009
+
+### Clustering
+
+- [Clustiering of Iris species](./notebooks/clustering-scikit-learn-k-means.ipynb) using K-Means with scikit-learn.
 
 ### Generative Adversarial Networks
 
