@@ -29,4 +29,5 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 ## ML Projects
 
 - [Blood Bowl result prediction](./notebooks/projects/classification-scikit-learn-blood-bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/) using scikit-learn.
+- [Movie recommendations](./notebooks/projects/movie-recommendations.ipynb) using the MovieLens dataset using PySpark ML.
 - [MiróBot](https://github.com/Pappa/MiroBot) - A generative adversarial network creating art in the stype of Joan Miró and Mark Rothko, with moderate success. Unfortunately, the many previous failed attempts aren't documented.
