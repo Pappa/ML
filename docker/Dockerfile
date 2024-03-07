@@ -2,9 +2,9 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update
-RUN apt-get install default-jdk -y
-RUN apt-get install -y unzip graphviz curl musescore3 python3-pip --fix-missing
+RUN apt update
+RUN apt install -y unzip graphviz curl musescore3 python3-pip --fix-missing
+RUN apt install -y default-jre --fix-missing
 
 RUN pip install --upgrade pip
 
