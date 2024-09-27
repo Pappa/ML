@@ -31,7 +31,7 @@ Note to self: don't forget to populate an `.env` file if you've cloned this repo
 - [Blood Bowl result prediction](./notebooks/projects/classification-scikit-learn-blood-bowl.ipynb) with Blood Bowl league data from [NAF](https://www.thenaf.net/) using scikit-learn.
 - **Recommendations** (using the MovieLens dataset)
   - Common [data preperation notebook](.notebooks/projects/movie-recommendations-data-preparation.ipynb) for these recommender notebooks.
-  - Movie rating prediction using [Collaborative Filtering](./notebooks/projects/movie-recommendations-als.ipynbb) with PySpark ML ALS.
+  - Movie rating prediction using [Collaborative Filtering](./notebooks/projects/movie-recommendations-als.ipynb) with PySpark ML ALS.
   - Recomendations using [KNN for item similarity](./notebooks/projects/recommendations-knn.ipynb).
   - Recomendations using [KNN for similarity grouped, by a common feature](./notebooks/projects/recommendations-knn-by-group.ipynb).
 - [MiróBot](https://github.com/Pappa/MiroBot) - A generative adversarial network creating art in the stype of Joan Miró and Mark Rothko, with moderate success. Unfortunately, the many previous failed attempts aren't documented.
